@@ -32,14 +32,14 @@ var socialLinks: ISocialLink[] = [
 export default function Footer() {
   return (
     <footer className="bg-white px-12 py-8">
-      <div className="container mx-auto flex items-center justify-between">
-        <Image src="/logo.png" alt="Logo" height={100} width={140} />
+      <div className="mx-auto flex max-w-[1024px] items-center justify-between">
+        <Image src="/logo.png" alt="Logo" height={67} width={94} />
         <nav className="flex items-center space-x-8 text-[1.2rem]">
           {navLinks.map((link: INavLink) => (
             <Link
               href={link.href}
               key={link.label}
-              className={`text-primary-light hover:text-primary-dark font-bold tracking-wide transition-colors duration-300`}
+              className={`font-bold tracking-wide text-primary-light transition-colors duration-300 hover:text-primary-dark`}
             >
               {link.label}
             </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
             <Link
               href={link.href}
               key={link.id}
-              className={`text-primary-light hover:text-primary-dark font-bold tracking-wide transition-colors duration-300`}
+              className={`font-bold tracking-wide text-primary-light transition-colors duration-300 hover:text-primary-dark`}
             >
               {link.label}
             </Link>

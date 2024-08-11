@@ -10,10 +10,10 @@ export default function PatientAndECardPage() {
       />
       <div className="flex items-center gap-[2rem]">
         <div className="basis-1/2">
-          <h1 className="text-primary-dark mb-16 text-center text-[2rem] font-bold">
+          <h1 className="mb-16 text-center text-[2rem] font-bold text-primary-dark">
             Patient App + E Card
           </h1>
-          <section className="text-primary-dark space-y-6 text-[1.5rem] font-[500]">
+          <section className="space-y-6 text-[1.5rem] font-[500] text-primary-dark">
             <p>
               One card is all you need. All your medical records are stored in
               one place that can be easily accessed.
@@ -28,8 +28,8 @@ export default function PatientAndECardPage() {
         <Image
           src="/images/patient-ecard/card.png"
           alt="card image"
-          width={650}
-          height={350}
+          width={435.5}
+          height={234.5}
         />
       </div>
     </div>

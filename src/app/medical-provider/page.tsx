@@ -13,8 +13,8 @@ export default function MedicalProviderPage() {
           <Image
             src="/images/medical-provider/ipad.png"
             alt="Ipad image"
-            width={770}
-            height={350}
+            width={516}
+            height={234.5}
           />
         </div>
         <div className="basis-1/2">

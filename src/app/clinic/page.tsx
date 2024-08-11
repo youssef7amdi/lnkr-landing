@@ -10,8 +10,8 @@ export default function ClinicPage() {
           <Image
             src="/images/clinic/laptop.png"
             alt="Laptop image"
-            width={870}
-            height={350}
+            width={583}
+            height={234.5}
           />
         </div>
         <div className="basis-2/5">

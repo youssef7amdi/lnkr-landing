@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  font-size: 67%;
+}
+
 .spinner {
   background:
     radial-gradient(farthest-side, #4f46e5 94%, #0000) top/10px 10px no-repeat,

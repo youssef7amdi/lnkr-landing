@@ -30,8 +30,8 @@ export default function PharmacyPage() {
         <Image
           src="/images/pharmacy/mobile.png"
           alt="mobile image"
-          width={653}
-          height={350}
+          width={437.5}
+          height={234.5}
         />
       </div>
     </div>

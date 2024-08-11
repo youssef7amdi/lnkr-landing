@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className + ' grid h-[100dvh] grid-rows-[120px_1fr_120px]'
+          inter.className + ' grid h-[100dvh] grid-rows-[80px_1fr_80px]'
         }
       >
         <Header />
