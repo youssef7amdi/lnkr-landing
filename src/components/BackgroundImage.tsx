@@ -14,6 +14,7 @@ export default function BackgroundImage({
         alt={alt}
         className="absolute inset-0 z-[-1]"
         fill={true}
+        priority
       />
     </>
   );

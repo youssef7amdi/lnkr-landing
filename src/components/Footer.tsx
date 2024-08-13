@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-white px-12 py-8">
       <div className="mx-auto flex max-w-[1024px] items-center justify-between">
-        <Image src="/logo.png" alt="Logo" height={67} width={94} />
+        <Image src="/logo.png" alt="Logo" height={67} width={94} priority />
         <nav className="flex items-center space-x-8 text-[1.2rem]">
           {navLinks.map((link: INavLink) => (
             <Link

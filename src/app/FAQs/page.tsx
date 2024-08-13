@@ -5,10 +5,10 @@ export default function FAQsPage() {
     <div className="px-[6rem] py-[8rem]">
       <BackgroundImage src="/FAQsBg.png" alt="background image of FAQs page" />
       <div>
-        <h1 className="text-primary-dark mb-16 text-center text-[2.5rem] font-bold">
+        <h1 className="mb-16 text-center text-[2.5rem] font-bold text-primary-dark">
           FAQs
         </h1>
-        <div className="text-primary-dark space-y-6">
+        <div className="space-y-6 text-primary-dark">
           <div>
             <h3 className="text-[1.5rem] font-bold">
               Q: Is Lnkr an insurance company?
