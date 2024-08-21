@@ -12,12 +12,12 @@ var navLinks: INavLink[] = [
   { label: 'Patient App + E-Card', href: '/patient-ecard' },
   { label: 'Clinic Management', href: '/clinic' },
   { label: 'Pharmacy', href: '/pharmacy' },
-  { label: 'Medical Service Provider', href: '/medical-provider' },
+  { label: 'Insurer', href: '/insurer' },
 ];
 
 var extraLinks: INavLink[] = [
   { label: 'FAQs', href: '/FAQs' },
-  { label: 'Contact-us', href: '' },
+  { label: 'Contact-us', href: '/contact-us' },
 ];
 
 export default function MainNav() {
@@ -30,7 +30,7 @@ export default function MainNav() {
           <Link
             href={link.href}
             key={link.label}
-            className={` ${link.href === pathname ? 'text-primary-dark font-extrabold' : 'text-primary-light font-bold'} hover:text-primary-dark tracking-wide transition-colors duration-300`}
+            className={` ${link.href === pathname ? 'font-extrabold text-primary-dark' : 'font-bold text-primary-light'} tracking-wide transition-colors duration-300 hover:text-primary-dark`}
           >
             {link.label}
           </Link>
@@ -41,7 +41,7 @@ export default function MainNav() {
           <Link
             href={link.href}
             key={link.label}
-            className={` ${link.href === pathname ? 'text-primary-dark font-extrabold' : 'text-primary-light font-bold'} hover:text-primary-dark tracking-wide transition-colors duration-300`}
+            className={` ${link.href === pathname ? 'font-extrabold text-primary-dark' : 'font-bold text-primary-light'} tracking-wide transition-colors duration-300 hover:text-primary-dark`}
           >
             {link.label}
           </Link>

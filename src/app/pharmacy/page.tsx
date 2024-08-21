@@ -1,5 +1,6 @@
 import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PharmacyPage() {
   return (
@@ -24,14 +25,36 @@ export default function PharmacyPage() {
               Real time transactions. Contracts can now be processed
               instantaneously! No more waiting time.
             </p>
+            <div className="flex items-center">
+              Visit Our Web:
+              <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
+                <Link
+                  href=""
+                  target="_blank"
+                  className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
+                >
+                  <Image
+                    src="/images/pharmacy/pharmacy-icon.svg"
+                    alt="pharmacy icon"
+                    width={20}
+                    height={20}
+                  />
+                  <span className="text-[1.2rem] font-bold underline">
+                    Pharmacy.lnkrtech
+                  </span>
+                </Link>
+              </span>
+            </div>
           </section>
         </div>
 
         <Image
           src="/images/pharmacy/mobile.png"
           alt="mobile image"
-          width={437.5}
+          width={500}
           height={234.5}
+          className="-mt-[10rem]"
+          quality={100}
         />
       </div>
     </div>

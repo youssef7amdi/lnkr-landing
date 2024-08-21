@@ -1,5 +1,15 @@
 import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
+import Link from 'next/link';
+
+const mobileApps = [
+  {
+    id: 'android',
+    icon: '/images/patient-ecard/play-store-icon.svg',
+    title: 'Get app on Play Store',
+    href: '',
+  },
+];
 
 export default function ClinicPage() {
   return (
@@ -10,7 +20,7 @@ export default function ClinicPage() {
           <Image
             src="/images/clinic/laptop.png"
             alt="Laptop image"
-            width={583}
+            width={580}
             height={234.5}
           />
         </div>
@@ -29,6 +39,26 @@ export default function ClinicPage() {
               number of times a specific drug was written.
             </p>
             <p>Drug-to-drug interactions and drug-to-disease interactions.</p>
+            <div className="flex items-center">
+              Visit Our Web:
+              <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
+                <Link
+                  href="http://lnkr-clinic.com.s3-website-us-east-1.amazonaws.com/"
+                  target="_blank"
+                  className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
+                >
+                  <Image
+                    src="/images/clinic/clinic-icon.svg"
+                    alt="clinic icon"
+                    width={20}
+                    height={20}
+                  />
+                  <span className="text-[1.2rem] font-bold underline">
+                    Clinic.lnkrtech
+                  </span>
+                </Link>
+              </span>
+            </div>
           </section>
         </div>
       </div>

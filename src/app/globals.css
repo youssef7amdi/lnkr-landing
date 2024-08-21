@@ -8,8 +8,64 @@
   }
 }
 
-html {
-  font-size: 67%;
+@layer base {
+  html {
+    font-size: 67%;
+    --sb-track-color: #eef2ff;
+    --sb-thumb-color: #4f46e5;
+    --sb-size: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #e0e7ff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4338ca;
+  }
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+  }
+}
+
+.nav-link:link,
+.nav-link:visited {
+  @apply flex items-center gap-[1.2rem] text-gray-600 transition-all duration-300;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  @apply px-[2.4rem] py-[1.2rem] text-[1.4rem] font-[500];
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active:link,
+.nav-link.active:visited {
+  @apply rounded-[5px] bg-gray-50 text-gray-800;
+}
+
+.main-nav-link svg {
+  @apply h-[2rem] w-[2rem] text-gray-400 transition-all duration-300;
+}
+
+.nav-link:hover svg,
+.nav-link:active svg,
+.nav-link.active:link svg,
+.nav-link.active:visited svg {
+  @apply text-brand-600;
 }
 
 .spinner {

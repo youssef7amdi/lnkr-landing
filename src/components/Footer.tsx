@@ -16,17 +16,27 @@ interface ISocialLink {
 
 var navLinks: INavLink[] = [
   { label: 'About us', href: '' },
-  { label: 'Terms & Conditions', href: '' },
-  { label: 'Privacy Statements', href: '' },
-  { label: 'IOS', href: '' },
-  { label: 'Android', href: '' },
+  // { label: 'Terms & Conditions', href: '' },
+  { label: 'Privacy Statements', href: 'privacy' },
   { label: 'API documentation', href: '' },
 ];
 
 var socialLinks: ISocialLink[] = [
-  { label: <FaFacebookSquare />, href: '', id: 'facebook' },
-  { label: <FaInstagram />, href: '', id: 'instagram' },
-  { label: <FaLinkedin />, href: '', id: 'linkedin' },
+  {
+    label: <FaLinkedin />,
+    href: 'https://www.linkedin.com/company/lnkr-ai/',
+    id: 'linkedin',
+  },
+  {
+    label: <FaFacebookSquare />,
+    href: 'https://www.facebook.com/lnkr.eg',
+    id: 'facebook',
+  },
+  {
+    label: <FaInstagram />,
+    href: 'https://www.instagram.com/lnkr.eg/?next=%2F',
+    id: 'instagram',
+  },
 ];
 
 export default function Footer() {
@@ -37,7 +47,7 @@ export default function Footer() {
         <nav className="flex items-center space-x-8 text-[1.2rem]">
           {navLinks.map((link: INavLink) => (
             <Link
-              href={link.href}
+              href={`/${link.href}`}
               key={link.label}
               className={`font-bold tracking-wide text-primary-light transition-colors duration-300 hover:text-primary-dark`}
             >
@@ -52,6 +62,7 @@ export default function Footer() {
           {socialLinks.map((link: ISocialLink) => (
             <Link
               href={link.href}
+              target="_blank"
               key={link.id}
               className={`font-bold tracking-wide text-primary-light transition-colors duration-300 hover:text-primary-dark`}
             >
