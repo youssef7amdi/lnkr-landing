@@ -14,6 +14,7 @@ export default function ContactUsPage() {
           <Link
             href="https://wa.me/1000607855"
             target="_blank"
+            rel="noopener"
             className="inline-flex items-center gap-[0.9rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
           >
             <Image
@@ -29,6 +30,7 @@ export default function ContactUsPage() {
           <Link
             href="mailto:info@lnkrtech.com"
             target="_blank"
+            rel="noopener"
             className="inline-flex items-center gap-[0.9rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
           >
             <Image

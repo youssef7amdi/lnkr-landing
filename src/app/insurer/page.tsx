@@ -46,6 +46,7 @@ export default function MedicalProviderPage() {
                 <Link
                   href="https://lnkr-insurance.netlify.app/"
                   target="_blank"
+                  rel="noopener"
                   className="inline-flex items-center gap-[0.9rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                 >
                   <Image

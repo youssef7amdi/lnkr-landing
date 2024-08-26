@@ -31,6 +31,7 @@ export default function PharmacyPage() {
                 <Link
                   href=""
                   target="_blank"
+                  rel="noopener"
                   className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                 >
                   <Image

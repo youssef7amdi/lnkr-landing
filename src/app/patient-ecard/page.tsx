@@ -7,13 +7,13 @@ const mobileApps = [
     id: 'android',
     icon: '/images/patient-ecard/play-store-icon.svg',
     title: 'Get app on Play Store',
-    href: '',
+    href: 'https://play.google.com/store/apps/details?id=com.lnkr.patient&hl=en',
   },
   {
     id: 'IOS',
     icon: '/images/patient-ecard/app-store-icon.svg',
     title: 'Get app on App Store',
-    href: '',
+    href: 'https://play.google.com/store/apps/details?id=com.lnkr.patient&hl=en',
   },
 ];
 
@@ -46,6 +46,8 @@ export default function PatientAndECardPage() {
                   <Link
                     key={app.id}
                     href={app.href}
+                    target="_blank"
+                    rel="noopener"
                     className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                   >
                     <Image

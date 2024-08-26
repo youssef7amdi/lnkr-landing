@@ -43,8 +43,9 @@ export default function ClinicPage() {
               Visit Our Web:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
-                  href="http://lnkr-clinic.com.s3-website-us-east-1.amazonaws.com/"
+                  href="https://clinic.lnkrtech.com"
                   target="_blank"
+                  rel="noopener"
                   className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                 >
                   <Image

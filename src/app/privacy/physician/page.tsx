@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function PrivacyPhysicianPage() {
   return (
     <div className="space-y-[2rem] overflow-auto text-[1.4rem]">
