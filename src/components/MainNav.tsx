@@ -12,6 +12,7 @@ var navLinks: INavLink[] = [
   { label: 'Patient App + E-Card', href: '/patient-ecard' },
   { label: 'Clinic Management', href: '/clinic' },
   { label: 'Pharmacy', href: '/pharmacy' },
+  { label: 'Lab Center', href: '/lab-center' },
   { label: 'Insurer', href: '/insurer' },
 ];
 

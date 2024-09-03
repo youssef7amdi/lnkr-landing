@@ -2,7 +2,7 @@ import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function ClinicPage() {
+export default function LabCenterPage() {
   return (
     <div className="py-[4rem] pe-[8rem]">
       <BackgroundImage src="/clinicBg.png" alt="Clinic Management Bg" />
@@ -17,36 +17,31 @@ export default function ClinicPage() {
         </div>
         <div className="basis-2/5">
           <h1 className="mb-8 text-center text-[2rem] font-bold text-primary-dark">
-            Clinic Management
+            Lab Center Management
           </h1>
           <section className="space-y-6 text-[1.3rem] font-[500] text-primary-dark">
-            <p>Absolute privacy of all your data</p>
+            <p>Absolute privacy of all your data.</p>
             <p>
-              Countless contracts. You can choose which company you want to
-              share specific prescriptions with.
+              Countless contracts, in real-time. Hence, faster billing cycles.
             </p>
-            <p>
-              Accurate accounting tool. Our dashboard will help you track the
-              number of times a specific drug was written.
-            </p>
-            <p>Drug-to-drug interactions and drug-to-disease interactions.</p>
+            <p>Accurate accounting tool.</p>
             <div className="flex items-center">
               Visit Our Web:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
-                  href="https://clinic.lnkrtech.com"
+                  href=""
                   target="_blank"
                   rel="noopener"
                   className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                 >
                   <Image
-                    src="/images/clinic/clinic-icon.svg"
-                    alt="clinic icon"
+                    src="/images/lab/laboratory-icon.svg"
+                    alt="lab icon"
                     width={20}
                     height={20}
                   />
                   <span className="text-[1.2rem] font-bold underline">
-                    Clinic.lnkrtech
+                    Lab.lnkrtech
                   </span>
                 </Link>
               </span>
