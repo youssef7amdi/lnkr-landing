@@ -13,7 +13,7 @@ const mobileApps = [
     id: 'IOS',
     icon: '/images/patient-ecard/app-store-icon.svg',
     title: 'Get app on App Store',
-    href: 'https://play.google.com/store/apps/details?id=com.lnkr.patient&hl=en',
+    href: 'https://apps.apple.com/eg/app/lnkr-patient/id1667211817',
   },
 ];
 

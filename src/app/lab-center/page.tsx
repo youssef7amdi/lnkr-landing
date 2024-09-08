@@ -29,7 +29,7 @@ export default function LabCenterPage() {
               Visit Our Web:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
-                  href=""
+                  href="https://lab.lnkrtech.com"
                   target="_blank"
                   rel="noopener"
                   className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
