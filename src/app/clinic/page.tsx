@@ -1,20 +1,26 @@
 import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
+import VideoClinic from './VideoClinic';
 
-export default function ClinicPage() {
+async function getVideoData(videoId: string) {
+  const response = await fetch(
+    `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`,
+  );
+  const data = await response.json();
+  return data;
+}
+
+export default async function ClinicPage() {
+  const videoId = 'Ay-jFQv2v4Q';
+
+  const videoData = await getVideoData(videoId);
+
   return (
     <div className="py-[4rem] pe-[8rem]">
       <BackgroundImage src="/clinicBg.png" alt="Clinic Management Bg" />
       <div className="flex h-full w-full items-center gap-[2rem]">
-        <div className="flex grow items-center justify-center">
-          <Image
-            src="/images/clinic/laptop.png"
-            alt="Laptop image"
-            width={580}
-            height={234.5}
-          />
-        </div>
+        <VideoClinic videoData={videoData} videoId={videoId} />
         <div className="basis-2/5">
           <h1 className="mb-8 text-center text-[2rem] font-bold text-primary-dark">
             Clinic Management
