@@ -2,6 +2,8 @@ import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
 import VideoClinic from './VideoClinic';
+import { Suspense } from 'react';
+import Spinner from '@/components/Spinner';
 
 async function getVideoData(videoId: string) {
   const response = await fetch(
@@ -20,7 +22,9 @@ export default async function ClinicPage() {
     <div className="py-[4rem] pe-[8rem]">
       <BackgroundImage src="/clinicBg.png" alt="Clinic Management Bg" />
       <div className="flex h-full w-full items-center gap-[2rem]">
-        <VideoClinic videoData={videoData} videoId={videoId} />
+        <Suspense fallback={<Spinner />}>
+          <VideoClinic videoData={videoData} videoId={videoId} />
+        </Suspense>
         <div className="basis-2/5">
           <h1 className="mb-8 text-center text-[2rem] font-bold text-primary-dark">
             Clinic Management
