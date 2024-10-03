@@ -42,7 +42,7 @@ export default async function ClinicPage() {
             <p>Drug-to-drug interactions and drug-to-disease interactions.</p>
             <div className="flex items-center">
               Visit Our Web:
-              <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
+              <span className="mx-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
                   href="https://clinic.lnkrtech.com"
                   target="_blank"
@@ -57,6 +57,22 @@ export default async function ClinicPage() {
                   />
                   <span className="text-[1.2rem] font-bold underline">
                     Clinic.lnkrtech
+                  </span>
+                </Link>
+                <Link
+                  href="https://hospital.lnkrtech.com"
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
+                >
+                  <Image
+                    src="/images/hospital/hospital-icon.svg"
+                    alt="hospital icon"
+                    width={20}
+                    height={20}
+                  />
+                  <span className="text-[1.2rem] font-bold underline">
+                    Hospital.lnkrtech
                   </span>
                 </Link>
               </span>
