@@ -6,13 +6,13 @@ const mobileApps = [
   {
     id: 'android',
     icon: '/images/patient-ecard/play-store-icon.svg',
-    title: 'Get app on Play Store',
+    title: 'Play Store',
     href: 'https://play.google.com/store/apps/details?id=com.lnkr.patient&hl=en',
   },
   {
     id: 'IOS',
     icon: '/images/patient-ecard/app-store-icon.svg',
-    title: 'Get app on App Store',
+    title: 'App Store',
     href: 'https://apps.apple.com/eg/app/lnkr-patient/id1667211817',
   },
 ];
