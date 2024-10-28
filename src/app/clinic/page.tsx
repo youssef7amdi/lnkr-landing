@@ -29,7 +29,7 @@ async function getVideoData(videoId: string) {
 }
 
 export default async function ClinicPage() {
-  const videoId = 'Ay-jFQv2v4Q';
+  const videoId = 'rDiMgNL8e3o';
 
   const videoData = await getVideoData(videoId);
 
