@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Lnkr Technologies Company',
+  title: 'Lnkr',
   description:
     'We are company that simply help Medical service providers optimize their Processes',
 };
