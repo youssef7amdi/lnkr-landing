@@ -18,7 +18,7 @@ var navLinks: INavLink[] = [
   { label: 'About us', href: '' },
   // { label: 'Terms & Conditions', href: '' },
   { label: 'Privacy Statements', href: 'privacy' },
-  { label: 'API documentation', href: '' },
+  { label: 'Documentation', href: 'docs' },
 ];
 
 var socialLinks: ISocialLink[] = [
