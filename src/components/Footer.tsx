@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ReactElement } from 'react';
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa';
 
 interface INavLink {
   label: string;
@@ -36,6 +41,11 @@ var socialLinks: ISocialLink[] = [
     label: <FaInstagram />,
     href: 'https://www.instagram.com/lnkr.eg/?next=%2F',
     id: 'instagram',
+  },
+  {
+    label: <FaYoutube />,
+    href: 'https://www.youtube.com/@LnkrTechnologies',
+    id: 'youtube',
   },
 ];
 

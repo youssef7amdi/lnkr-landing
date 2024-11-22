@@ -9,10 +9,11 @@ interface INavLink {
 }
 
 var navLinks: INavLink[] = [
-  { label: 'Patient App + E-Card', href: '/patient-ecard' },
-  { label: 'Clinic Management', href: '/clinic' },
+  { label: 'Patient', href: '/patient' },
+  { label: 'Doctor', href: '/doctor' },
   { label: 'Pharmacy', href: '/pharmacy' },
-  { label: 'Lab Center', href: '/lab-center' },
+  { label: 'Laboratory', href: '/laboratory' },
+  { label: 'Radiology', href: '/radiology' },
   { label: 'Insurer', href: '/insurer' },
 ];
 

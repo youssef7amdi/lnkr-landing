@@ -22,6 +22,28 @@ const config: Config = {
           900: '#312e81',
         },
       },
+      keyframes: {
+        scaleIn: {
+          '0%': { transform: 'scale(0)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)',
+            filter: 'blur(10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+            filter: 'blur(0)',
+          },
+        },
+      },
+      animation: {
+        logo: 'scaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        content: 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards',
+      },
     },
   },
   plugins: [],

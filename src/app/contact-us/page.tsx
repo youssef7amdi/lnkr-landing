@@ -1,11 +1,9 @@
-import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ContactUsPage() {
   return (
     <div className="px-[6rem] py-[8rem]">
-      <BackgroundImage src="/FAQsBg.png" alt="background image of FAQs page" />
       <div>
         <h1 className="mb-16 text-center text-[2.5rem] font-bold text-primary-dark">
           Contact Us Via

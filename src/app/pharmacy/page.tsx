@@ -1,11 +1,9 @@
-import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function PharmacyPage() {
   return (
     <div className="ps-[16rem]">
-      <BackgroundImage src="/pharmacyBg.png" alt="Pharmacy Bg" />
       <div className="flex h-full w-full items-center gap-[6rem]">
         <div className="basis-2/5">
           <h1 className="mb-8 text-center text-[2rem] font-bold text-primary-dark">
@@ -26,7 +24,7 @@ export default function PharmacyPage() {
               instantaneously! No more waiting time.
             </p>
             <div className="flex items-center">
-              Visit Our Web:
+              Visit our web:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
                   href=""

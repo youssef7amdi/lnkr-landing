@@ -1,9 +1,6 @@
-import BackgroundImage from '@/components/BackgroundImage';
-
 export default function FAQsPage() {
   return (
     <div className="px-[6rem] py-[8rem]">
-      <BackgroundImage src="/FAQsBg.png" alt="background image of FAQs page" />
       <div>
         <h1 className="mb-16 text-center text-[2.5rem] font-bold text-primary-dark">
           FAQs

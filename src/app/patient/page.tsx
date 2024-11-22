@@ -1,17 +1,16 @@
-import BackgroundImage from '@/components/BackgroundImage';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const mobileApps = [
   {
     id: 'android',
-    icon: '/images/patient-ecard/play-store-icon.svg',
+    icon: '/images/patient/play-store-icon.svg',
     title: 'Play Store',
     href: 'https://play.google.com/store/apps/details?id=com.lnkr.patient&hl=en',
   },
   {
     id: 'IOS',
-    icon: '/images/patient-ecard/app-store-icon.svg',
+    icon: '/images/patient/app-store-icon.svg',
     title: 'App Store',
     href: 'https://apps.apple.com/eg/app/lnkr-patient/id1667211817',
   },
@@ -20,27 +19,19 @@ const mobileApps = [
 export default function PatientAndECardPage() {
   return (
     <div className="px-[20rem] py-[8rem]">
-      <BackgroundImage
-        src="/patient-ecardBg.png"
-        alt="Patient - ECard Bg image"
-      />
-      <div className="flex items-center gap-[2rem]">
+      <div className="flex items-center gap-[10rem]">
         <div className="basis-1/2">
-          <h1 className="mb-16 text-center text-[2rem] font-bold text-primary-dark">
-            Patient App + E Card
-          </h1>
           <section className="space-y-6 text-[1.5rem] font-[500] text-primary-dark">
             <p>
-              One card is all you need. All your medical records are stored in
-              one place that can be easily accessed.
+              All your medical records are securely stored in one place that can
+              be easily accessed.
             </p>
+            <p>No more waiting for approvals. Enjoy real-time transactions.</p>
             <p>
-              All your medical transactions are now done in real-time.
-              <br />
-              No more waiting for approvals!
+              Access a wide network of healthcare providers, at your fingertip.
             </p>
             <div className="flex items-center">
-              Get Our apps:
+              Get our apps:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 {mobileApps.map((app) => (
                   <Link
@@ -64,10 +55,10 @@ export default function PatientAndECardPage() {
           </section>
         </div>
         <Image
-          src="/images/patient-ecard/card.png"
+          src="/images/patient/patient-image.jpg"
           alt="card image"
-          width={435.5}
-          height={234.5}
+          width={350.5}
+          height={200.5}
         />
       </div>
     </div>

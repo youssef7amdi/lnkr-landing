@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BackgroundImage from '@/components/BackgroundImage';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,10 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className + ' grid h-[100dvh] grid-rows-[80px_1fr_80px]'
+          inter.className +
+          ' relative grid h-[100dvh] grid-rows-[80px_1fr_80px]'
         }
       >
         <Header />
+        <BackgroundImage />
         {children}
         <Footer />
       </body>
