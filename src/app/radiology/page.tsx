@@ -25,10 +25,9 @@ export default function LabCenterPage() {
               Visit our web:
               <span className="ms-[2rem] inline-flex items-center gap-[2rem]">
                 <Link
-                  // href="https://radiology.lnkrtech.com/"
-                  href={''}
-                  // target="_blank"
-                  // rel="noopener"
+                  href="https://scan.lnkrtech.com/"
+                  target="_blank"
+                  rel="noopener"
                   className="inline-flex items-center gap-[0.8rem] rounded-xl border border-primary-dark px-[0.9rem] py-[0.7rem] transition-all duration-300 hover:bg-primary-dark hover:text-white"
                 >
                   <Image
