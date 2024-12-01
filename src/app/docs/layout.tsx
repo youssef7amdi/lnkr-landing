@@ -4,7 +4,11 @@ import { ImLab } from 'react-icons/im';
 
 const docsLinks = [
   { label: 'doctor', href: '/docs/doctor', icon: <FaUserDoctor /> },
+  { label: 'hospital', href: '/docs/hospital', icon: <FaUserDoctor /> },
+  { label: 'pharmacy', href: '/docs/pharmacy', icon: <ImLab /> },
   { label: 'lab', href: '/docs/lab', icon: <ImLab /> },
+  { label: 'scan', href: '/docs/scan', icon: <ImLab /> },
+  { label: 'insurer', href: '/docs/insurer', icon: <ImLab /> },
 ];
 
 export default function RootLayout({
