@@ -1,14 +1,18 @@
 import SideNav from '@/components/SideNav';
 import { FaUserDoctor } from 'react-icons/fa6';
 import { ImLab } from 'react-icons/im';
+import { PiHospital } from 'react-icons/pi';
+import { MdLocalPharmacy } from 'react-icons/md';
+import { RiBodyScanLine } from 'react-icons/ri';
+import { FaCoins } from 'react-icons/fa';
 
 const docsLinks = [
   { label: 'doctor', href: '/docs/doctor', icon: <FaUserDoctor /> },
-  { label: 'hospital', href: '/docs/hospital', icon: <FaUserDoctor /> },
-  { label: 'pharmacy', href: '/docs/pharmacy', icon: <ImLab /> },
+  { label: 'hospital', href: '/docs/hospital', icon: <PiHospital /> },
+  { label: 'pharmacy', href: '/docs/pharmacy', icon: <MdLocalPharmacy /> },
   { label: 'lab', href: '/docs/lab', icon: <ImLab /> },
-  { label: 'scan', href: '/docs/scan', icon: <ImLab /> },
-  { label: 'insurer', href: '/docs/insurer', icon: <ImLab /> },
+  { label: 'scan', href: '/docs/scan', icon: <RiBodyScanLine /> },
+  { label: 'insurer', href: '/docs/insurer', icon: <FaCoins /> },
 ];
 
 export default function RootLayout({
